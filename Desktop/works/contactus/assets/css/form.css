@@ -1,0 +1,207 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--color-green-200, rgba(224, 241, 232, 1));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  padding: 128px 352px;
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container p {
+  margin-bottom: 8px;
+  color: var(--color-grey-900, rgba(42, 65, 68, 1));
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.contact  {
+  width: 736px;
+  margin: 0 auto;
+  border: 1px solid var(--color-white, rgba(255, 255, 255, 1));
+  background-color: var(--color-white, rgba(255, 255, 255, 1));
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.contact h1 {
+  color: var(--color-grey-900, rgba(42, 65, 68, 1));
+  line-height: 32px;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.name-surname {
+  display: flex;
+  gap: 16px;
+}
+
+.name-surname input {
+  width: 320px;
+  border-radius: 8px;
+  height: 51px;
+  border: 1px solid var(--color-grey-500, rgba(134, 162, 165, 1));
+  padding: 12px 24px;
+}
+
+.mail input {
+  width: 656px;
+  border-radius: 8px;
+  height: 51px;
+  border: 1px solid var(--color-grey-500, rgba(134, 162, 165, 1));
+  padding: 12px 24px;
+}
+
+.query-input {
+  display: flex;
+  gap: 16px;
+}
+
+.query-item {
+  width: 320px;
+  padding: 12px 24px;
+  border: 1px solid var(--color-grey-500, rgba(134, 162, 165, 1));
+  border-radius: 8px;
+}
+
+.query-item:active {
+  background-color: var(--color-green-200, rgba(224, 241, 232, 1));
+  border: 1px solid var(--color-green-600, rgba(12, 125, 105, 1));
+}
+
+.message textarea {
+  width: 656px;
+  height: 105px;
+  border-radius: 8px;
+  resize: none;
+  padding: 12px 24px;
+}
+
+.check input {
+  margin-right: 10px;
+}
+
+.submit button {
+  width: 656px;
+  padding-block: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-green-600, rgba(12, 125, 105, 1));
+  color: var(--color-white, rgba(255, 255, 255, 1));
+  line-height: 27px;
+}
+
+.submit button:hover {
+  background-color: #203129;
+}
+
+.form {
+  width: 736px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.form li {
+  margin-bottom: 6px;
+}
+
+
+/* tablet başlangıç */
+@media (width <= 768px) {
+  .container {
+    padding: 128px 39px;
+  }
+
+  .contact {
+    width: 690px;
+  }
+
+  .name-surname input {
+    width: 297px;
+  }
+
+  .mail input {
+    width: 610px;
+  }
+
+  .message textarea  {
+    width: 610px;
+  }
+
+  .submit button {
+    width: 610px;
+  }
+}
+/* tablet bitiş */
+
+/* mobil başlangıç */
+@media (width <= 375px) {
+  .container {
+    padding: 32px 16px;
+  }
+
+  .contact {
+    width: 343px;
+    padding: 24px;
+  }
+
+  .name-surname {
+    flex-direction: column;
+  }
+
+  .name-surname input {
+    width: 295px;
+  }
+
+  .mail input {
+    width: 295px;
+  }
+
+  .message textarea  {
+    width: 295px;
+    height: 240px;
+  }
+
+  .submit button {
+    width: 295px;
+  }
+
+  .query-input {
+    flex-direction: column;
+  }
+
+  .query-item {
+    width: 295px;
+  }
+}

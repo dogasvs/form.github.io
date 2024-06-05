@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/form.css">
+  <script src="assets/js/form.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <form class="contact">
+      <h1>İletişime Geçin</h1>
+
+      <div class="name-surname">
+        <div class="name" autocomplete="off">
+          <p>İsim *</p>
+          <label><input class="data" type="text" name="name" required> </label> 
+        </div>
+        <div class="soyad" autocomplete="off">
+          <p>Soyisim *</p>
+          <input class="data" type="text" name="name" required>
+        </div>
+      </div>
+
+      <div class="mail" autocomplete="off">
+        <p>E-posta *</p>
+        <input  class="data" type="text" name="email" required>
+      </div>
+
+      <div class="query">
+        <p>Sorgu Türü *</p>
+        <div class="query-input">
+          <div class="query-item">
+            <label> <input type="radio" name="talep" required> Genel Soruşturma</label>
+          </div>
+          <div class="query-item">
+            <label> <input type="radio" name="talep" required> Destek Talebi</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="message" autocomplete="off">
+        <p>Mesaj *</p>
+        <textarea class="data" cols="50" rows="4"></textarea>
+      </div>
+
+      <div class="check">
+        <label> <input type="checkbox">Ekiple iletişime geçilmesine onay veriyorum</label>
+      </div>
+      
+      <div class="submit">
+        <button>Gönder</button>
+      </div>
+      <div class="form-liste">
+        <ul class="form activeForm"></ul>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
