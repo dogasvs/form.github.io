@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: pink;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container  {
+  display: flex;
+  gap: 50px;
+}
+
+.foodlisteleme, .placelisteleme, .plakalisteleme {
+  border: 1px solid azure;
+  background-color: azure;
+  padding: 20px;
+}
+
+.plaka {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  width: 270px;
+  padding: 10px;
+  border: 1px solid red;
+  box-shadow: 4px 5px pink;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}

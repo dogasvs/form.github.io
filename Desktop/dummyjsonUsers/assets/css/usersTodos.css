@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(https://products.ls.graphics/mesh-gradients/images/10.-Mindaro_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-block: 200px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.container h1 {
+  color: blue;
+  font-size: 32px;
+  text-align: center;
+}
+
+
